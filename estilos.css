@@ -1,0 +1,156 @@
+/* ===================================================
+   BELVET SKIN - CSS REVISADO Y ASEGURADO
+=================================================== */
+
+:root {
+    --rosa-principal: #f7b5ca;
+    --rosa-pastel-suave: #fcebf0;
+    --verde-principal: #90c887;
+    --verde-pastel-suave: #eaf5e7;
+    --texto-oscuro: #375333;
+    --blanco-puro: #ffffff;
+    
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--font-sans) !important;
+    background-color: var(--rosa-pastel-suave) !important;
+    color: var(--texto-oscuro) !important;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, .font-serif {
+    font-family: var(--font-serif) !important;
+}
+
+.text-pink { color: #db6e91 !important; }
+.text-green { color: var(--verde-principal) !important; }
+.text-oscuro { color: var(--texto-oscuro) !important; }
+
+.bg-rosa-suave { background-color: var(--rosa-pastel-suave) !important; }
+.bg-verde-suave { background-color: var(--verde-pastel-suave) !important; }
+
+.border-rosa { border: 2px solid var(--rosa-principal) !important; }
+.border-verde { border: 2px solid var(--verde-principal) !important; }
+
+/* NAVBAR Y LOGO */
+.bg-aesthetic {
+    background-color: var(--verde-pastel-suave) !important;
+    border-bottom: 2px solid var(--rosa-principal) !important;
+}
+
+/* CORTE FORZADO PARA QUITAR EL AZUL DEL LOGO */
+.logo-img {
+    width: 45px !important;
+    height: 45px !important;
+    object-fit: cover !important;
+    object-position: left center !important; /* Mantiene solo la parte izquierda (el circulo BS) */
+    border-radius: 50% !important;
+    border: 2px solid var(--rosa-principal) !important;
+}
+
+.brand-name {
+    font-family: var(--font-serif) !important;
+    font-size: 1.4rem !important;
+    font-weight: 600 !important;
+    color: var(--texto-oscuro) !important;
+    letter-spacing: 2px !important;
+}
+
+.navbar-nav .nav-link {
+    font-size: 0.95rem;
+    color: var(--texto-oscuro) !important;
+    margin: 0 8px;
+    font-weight: 500;
+}
+
+.btn-contacto-nav {
+    border: 2px solid var(--rosa-principal) !important;
+    border-radius: 20px !important;
+    padding: 6px 18px !important;
+    background-color: var(--blanco-puro) !important;
+}
+
+/* BANNER */
+.hero-banner {
+    background: linear-gradient(135deg, var(--rosa-principal), var(--verde-principal)) !important;
+    color: var(--texto-oscuro) !important;
+    padding: 60px 0 !important;
+}
+
+/* CARDS */
+.card-aesthetic {
+    background-color: var(--blanco-puro) !important;
+    border-radius: 18px !important;
+    border: 2px solid var(--rosa-principal) !important;
+    overflow: hidden !important;
+}
+
+.card-img-wrapper {
+    height: 220px !important;
+    overflow: hidden !important;
+}
+
+.card-img-wrapper img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+.about-img-box img {
+    width: 200px !important;
+    height: 200px !important;
+    object-fit: cover !important;
+    border: 4px solid var(--verde-principal) !important;
+}
+
+/* BOTONES */
+.btn-aesthetic {
+    background-color: var(--verde-principal) !important;
+    color: var(--blanco-puro) !important;
+    border: 2px solid var(--verde-principal) !important;
+    border-radius: 30px !important;
+    padding: 10px 28px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+}
+
+.btn-outline-aesthetic {
+    border: 2px solid var(--verde-principal) !important;
+    color: var(--texto-oscuro) !important;
+    border-radius: 30px !important;
+    padding: 8px 22px !important;
+    background: var(--blanco-puro) !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+}
+
+/* BOTÓN FLOTANTE */
+.elemento-flotante {
+    position: fixed !important;
+    bottom: 25px !important;
+    right: 25px !important;
+    width: 55px !important;
+    height: 55px !important;
+    background-color: var(--verde-principal) !important;
+    border: 2px solid var(--blanco-puro) !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 1000 !important;
+}
+
+.elemento-flotante a {
+    color: white !important;
+    font-size: 28px !important;
+    text-decoration: none !important;
+}
+
+/* FOOTER */
+.footer-aesthetic {
+    background-color: var(--verde-pastel-suave) !important;
+    border-top: 2px solid var(--rosa-principal) !important;
+}
